@@ -12,7 +12,7 @@ import org.springframework.boot.jdbc.DataSourceBuilder;
  *
  */
 
-@Configuration
+//@Configuration
 public class DatasourceConfig {
 
 	@Bean
