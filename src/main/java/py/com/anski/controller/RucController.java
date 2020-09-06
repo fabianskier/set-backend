@@ -56,7 +56,7 @@ public class RucController {
 			return new ResponseEntity<Page<Ruc>>(rucs, HttpStatus.OK);
 		}
 
-	  @GetMapping(value = "/listar/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	  @GetMapping(value = "/listarPorId/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
 	  public ResponseEntity<Ruc> listarId(@PathVariable("id") Integer id) {
 	    Ruc ruc = new Ruc();
 	    ruc = service.listarPorId(id);
