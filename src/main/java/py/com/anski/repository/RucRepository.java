@@ -14,6 +14,6 @@ import py.com.anski.model.Ruc;
 @Repository
 public interface RucRepository extends JpaRepository<Ruc, Integer> {
 
-	@Query("from Ruc r where r.ruc.documento =: documento")
+	@Query("select r from Ruc r where r.documento = ?1")
 	Ruc findUserByDocumento(String documento);
 }
