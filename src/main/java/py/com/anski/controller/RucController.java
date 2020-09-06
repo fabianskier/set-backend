@@ -57,11 +57,15 @@ public class RucController {
 		}
 
 	  @GetMapping(value = "/listarPorId/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	  public ResponseEntity<Ruc> listarId(@PathVariable("id") Integer id) {
-	    Ruc ruc = new Ruc();
-	    ruc = service.listarPorId(id);
-	    return new ResponseEntity<Ruc>(ruc, HttpStatus.OK);
-	  }
+	  public ResponseEntity<Ruc> listarPorId(@PathVariable("id") Integer id){
+		  	Ruc ruc = new Ruc();
+			try {
+				ruc = service.listarPorId(id);
+			}catch(Exception e) {
+				return new ResponseEntity<Ruc>(ruc, HttpStatus.INTERNAL_SERVER_ERROR);
+			}
+			return new ResponseEntity<Ruc>(ruc, HttpStatus.OK);
+		}
 
 	  @PostMapping(value = "/registrar", consumes = MediaType.APPLICATION_JSON_VALUE,
 	      produces = MediaType.APPLICATION_JSON_VALUE)
