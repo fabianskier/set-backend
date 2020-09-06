@@ -56,4 +56,11 @@ public class RucServiceImpl implements RucService {
 		return repository.findAll(pageable);
 	}
 
+	@Override
+	public Ruc listarPorDocumento(String documento) {
+		return repository.findUserByDocumento(documento);
+	}
+	
+	
+
 }

@@ -23,6 +23,8 @@ public interface RucService {
 	List<Ruc> listarTodo();
 
 	Ruc listarPorId(int idRuc);
+	
+	Ruc listarPorDocumento(String documento);
 
 	Page<Ruc> listarPorPagina(Pageable pageable);
 }
