@@ -12,3 +12,7 @@ spring:
   jackson:
     serialization:
       fail-on-empty-beans: false
+anski:
+  app:
+    jwtSecret: secret
+    jwtExpirationMs: 86400000
