@@ -27,7 +27,7 @@ import py.com.anski.service.RucService;
  */
 
 @RestController
-@RequestMapping("/ruc")
+@RequestMapping("/api/ruc")
 public class RucController {
 
 	@Autowired
