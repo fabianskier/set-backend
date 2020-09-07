@@ -9,11 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/**
- * @author anski
- *
- */
-
 @Entity
 @Table(name = "rol")
 public class Rol {

@@ -1,4 +1,4 @@
-package py.com.anski.security;
+package py.com.anski.security.service;
 
 import java.util.Collection;
 import java.util.List;
@@ -12,11 +12,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import py.com.anski.model.Usuario;
-
-/**
- * @author anski
- *
- */
 
 public class UserDetailsImpl implements UserDetails {
 

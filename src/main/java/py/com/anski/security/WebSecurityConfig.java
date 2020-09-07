@@ -16,11 +16,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 import py.com.anski.security.jwt.AuthEntryPointJwt;
 import py.com.anski.security.jwt.AuthTokenFilter;
-
-/**
- * @author anski
- *
- */
+import py.com.anski.security.service.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity

@@ -1,4 +1,4 @@
-package py.com.anski.security;
+package py.com.anski.security.service;
 
 import javax.transaction.Transactional;
 

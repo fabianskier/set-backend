@@ -17,12 +17,7 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import py.com.anski.security.UserDetailsServiceImpl;
-
-/**
- * @author anski
- *
- */
+import py.com.anski.security.service.UserDetailsServiceImpl;
 
 public class AuthTokenFilter extends OncePerRequestFilter {
 

@@ -14,12 +14,7 @@ import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.SignatureException;
 import io.jsonwebtoken.UnsupportedJwtException;
-import py.com.anski.security.UserDetailsImpl;
-
-/**
- * @author anski
- *
- */
+import py.com.anski.security.service.UserDetailsImpl;
 
 @Component
 public class JwtUtils {

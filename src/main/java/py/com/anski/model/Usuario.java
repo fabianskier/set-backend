@@ -15,11 +15,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
-/**
- * @author anski
- *
- */
-
 @Entity
 @Table(name = "usuario", uniqueConstraints = {@UniqueConstraint(columnNames = "nombre"),
     @UniqueConstraint(columnNames = "email")})
